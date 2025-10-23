@@ -12,11 +12,13 @@ interface NodeTypeInterface extends DescribableInterface, SearchableInterface
      * Get node-source entity class name without its namespace.
      *
      * @return string
+     * @deprecated Use NodeTypeClassLocatorInterface instead.
      */
     public function getSourceEntityClassName(): string;
 
     /**
      * @return class-string
+     * @deprecated Use NodeTypeClassLocatorInterface instead.
      */
     public function getSourceEntityFullQualifiedClassName(): string;
 
