@@ -8,8 +8,6 @@ interface SearchableInterface
 {
     /**
      * Tells if current entity can be searched and indexed in a Search engine server.
-     *
-     * @return boolean
      */
     public function isSearchable(): bool;
 }

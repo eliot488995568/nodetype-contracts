@@ -36,9 +36,12 @@ jobs:
                       ${{ runner.os }}-php-${{ matrix.php-version }}-
             - name: Install Dependencies
               run: composer install --no-scripts --no-ansi --no-interaction --no-progress
-            - name: Run PHP Code Sniffer
+            - name: Run PHP CS fixer
               run: |
-                  php -d "memory_limit=-1" vendor/bin/phpcs --report=full -p ./src
+                  php -d "memory_limit=-1" vendor/bin/php-cs-fixer check --ansi -vvv
             - name: Run PHP Stan
               run: |
                   php -d "memory_limit=-1" vendor/bin/phpstan analyse
+            - name: Run Rector
+              run: |
+                  php -d "memory_limit=-1" vendor/bin/rector process --dry-run

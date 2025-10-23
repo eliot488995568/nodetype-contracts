@@ -11,21 +11,19 @@ interface NodeTypeInterface extends DescribableInterface, SearchableInterface
     /**
      * Get node-source entity class name without its namespace.
      *
-     * @return string
-     * @deprecated Use NodeTypeClassLocatorInterface instead.
+     * @deprecated use NodeTypeClassLocatorInterface::getSourceEntityClassName instead
      */
     public function getSourceEntityClassName(): string;
 
     /**
      * @return class-string
-     * @deprecated Use NodeTypeClassLocatorInterface instead.
+     *
+     * @deprecated use NodeTypeClassLocatorInterface::getSourceEntityFullQualifiedClassName instead
      */
     public function getSourceEntityFullQualifiedClassName(): string;
 
     /**
      * Get node-source entity database table name.
-     *
-     * @return string
      */
     public function getSourceEntityTableName(): string;
 
@@ -47,26 +45,14 @@ interface NodeTypeInterface extends DescribableInterface, SearchableInterface
      */
     public function getSearchableFields(): Collection;
 
-    /**
-     * @param string $name
-     * @return NodeTypeFieldInterface|null
-     */
     public function getFieldByName(string $name): ?NodeTypeFieldInterface;
 
     /**
      * Gets the value of color.
-     *
-     * @return string|null
      */
     public function getColor(): ?string;
 
-    /**
-     * @return bool
-     */
     public function isReachable(): bool;
 
-    /**
-     * @return bool
-     */
     public function isPublishable(): bool;
 }

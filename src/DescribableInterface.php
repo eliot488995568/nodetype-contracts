@@ -6,9 +6,6 @@ namespace RZ\Roadiz\Contracts\NodeType;
 
 interface DescribableInterface
 {
-    /**
-     * @return string|null
-     */
     public function getDescription(): ?string;
 
     /**
@@ -16,13 +13,7 @@ interface DescribableInterface
      */
     public function getLabel(): string;
 
-    /**
-     * @return string
-     */
     public function getName(): string;
 
-    /**
-     * @return boolean
-     */
     public function isVisible(): bool;
 }
