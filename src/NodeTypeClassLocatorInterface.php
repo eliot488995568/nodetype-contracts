@@ -44,4 +44,11 @@ interface NodeTypeClassLocatorInterface
      * @return string
      */
     public function getClassNamespace(): string;
+
+    /**
+     * Get repository namespace.
+     *
+     * @return string
+     */
+    public function getRepositoryNamespace(): string;
 }
