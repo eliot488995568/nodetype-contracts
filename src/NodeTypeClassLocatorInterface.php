@@ -9,18 +9,18 @@ interface NodeTypeClassLocatorInterface
     /**
      * Get node-source entity class name without its namespace.
      *
-     * @param NodeTypeInterface $nodeTypeInterface
+     * @param NodeTypeInterface $nodeType
      * @return string
      */
-    public function getSourceEntityClassName(NodeTypeInterface $nodeTypeInterface): string;
+    public function getSourceEntityClassName(NodeTypeInterface $nodeType): string;
 
     /**
      * Get repository class name without its namespace.
      *
-     * @param NodeTypeInterface $nodeTypeInterface
+     * @param NodeTypeInterface $nodeType
      * @return string
      */
-    public static function getRepositoryClassName(NodeTypeInterface $nodeTypeInterface): string;
+    public static function getRepositoryClassName(NodeTypeInterface $nodeType): string;
 
     /**
      * Get fully qualified node-source entity class name.
@@ -34,12 +34,12 @@ interface NodeTypeClassLocatorInterface
      *
      * @return class-string
      */
-    public static function getRepositoryFullQualifiedClassName(): string;
+    public function getRepositoryFullQualifiedClassName(): string;
 
     /**
      * Get class namespace.
      *
      * @return string
      */
-    public static function getClassNamespace(): string;
+    public function getClassNamespace(): string;
 }
