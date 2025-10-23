@@ -2,6 +2,27 @@
 
 All notable changes to project will be documented in this file.
 
+## [3.0.0](https://github.com/roadiz/nodetype-contracts/compare/2.0.0...3.0.0) - 2025-06-02
+
+### ⚠ Breaking changes
+
+- Add `isRequired` method to NodeTypeFieldInterface ([#3](https://github.com/roadiz/nodetype-contracts/issues/3))
+
+### Features
+
+-  [**breaking**]Add isRequired method to NodeTypeFieldInterface ([#3](https://github.com/roadiz/nodetype-contracts/issues/3)) - ([d80378f](https://github.com/roadiz/nodetype-contracts/commit/d80378fc907cb352ee7865d64a993bbb13099961)) - Eliot
+
+## [2.0.0](https://github.com/roadiz/nodetype-contracts/compare/1.1.5...2.0.0) - 2025-02-04
+
+### CI/CD
+
+- Updated CI tools - ([7d700b3](https://github.com/roadiz/nodetype-contracts/commit/7d700b35d607131f153cc33f036a40c1ddc70810)) - Ambroise Maupate
+
+### Features
+
+- Add getDefaultValuesAsArray to NodeTypeFieldInterface - ([cbf9f97](https://github.com/roadiz/nodetype-contracts/commit/cbf9f978ee29b15a2f6dcb3ff6000c3853890e82)) - eliot lauger
+- Update phpstan.neon - ([d6eb03c](https://github.com/roadiz/nodetype-contracts/commit/d6eb03c33c6723431fe0465176f1ec25a05c9d50)) - eliot lauger
+
 ## [1.1.5](https://github.com/roadiz/nodetype-contracts/compare/1.1.4...1.1.5) - 2023-12-02
 
 ### CI/CD
